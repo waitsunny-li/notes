@@ -1,0 +1,16 @@
+- application/x-www-form-urlencoded：默认的 encType，当 form 表单请求为 get 时，数据被编码为 key/value 格式（name1=value1&name2=value2…），然后把这个字串 append 到 url 后面，用 ? 分割，加载这个新的 url 发送到服务器（表单默认的提交数据的格式）；当请求为 post 时，浏览器把 form 数据封装到 http body 中，然后发送到 server。（form 的 enctype 属性为编码方式，常用有两种：application/x-www-form-urlencoded 和 multipart/form-data，默认为 application/x-www-form-urlencoded。）
+- multipart/form-data：需要在表单中进行文件上传时，就需要使用该格式
+  application/json：application/json 这个 Content-Type 作为响应头大家肯定不陌生。实际上，现在越来越多的人把它作为请求头，用来告诉服务端消息主体是序列化后的 JSON 字符串
+- text/xml：它是一种使用 HTTP 作为传输协议，XML 作为编码方式的远程调用规范
+- application/xhtml+xml：XHTML格式
+- application/xml：XML数据格式
+- application/atom+xml：Atom XML聚合格式
+- application/json：JSON数据格式
+- application/pdf：pdf格式
+- application/msword：Word文档格式
+- application/octet-stream：二进制流数据（如常见的文件下载）
+- text/html：HTML格式
+- text/plain：纯文本格式
+- image/gif：gif图片格式
+- image/jpeg：jpg图片格式
+- image/png：png图片格式
